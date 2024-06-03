@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te Amo Aleja</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #000428, #004e92);
+            font-family: 'Arial', sans-serif;
+            color: white;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            animation: glow 1.5s ease-in-out infinite alternate;
+        }
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff0099, 0 0 40px #ff0099, 0 0 50px #ff0099, 0 0 60px #ff0099, 0 0 70px #ff0099;
+            }
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #ff0099, 0 0 40px #ff0099, 0 0 50px #ff0099, 0 0 60px #ff0099, 0 0 70px #ff0099, 0 0 80px #ff0099;
+            }
+        }
+        .heart {
+            color: #ff0066;
+            animation: beat 1s infinite;
+        }
+        @keyframes beat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Te Amo <span class="heart">Aleja</span></h1>
+    </div>
+</body>
+</html>
