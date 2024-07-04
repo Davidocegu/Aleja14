@@ -9,15 +9,16 @@
             margin: 0;
             padding: 0;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4);
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
             font-family: 'Arial', sans-serif;
             color: #fff;
+            text-align: center;
         }
         .container {
-            text-align: center;
             background: rgba(255, 255, 255, 0.2);
             padding: 30px;
             border-radius: 10px;
@@ -36,6 +37,12 @@
             margin-top: 20px;
             animation: float 4s ease-in-out infinite;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .rose {
+            width: 150px;
+            height: auto;
+            margin-top: 20px;
+            animation: float 4s ease-in-out infinite;
         }
         @keyframes glow {
             from {
@@ -74,6 +81,7 @@
     <div class="container">
         <h1>Te Amo Mucho <span class="heart">Aleja</span></h1>
         <img src="imagen.jpg" alt="Imagen de Aleja">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Rose_close-up_black_background.jpg/800px-Rose_close-up_black_background.jpg" alt="Rosa" class="rose">
     </div>
 </body>
 </html>
